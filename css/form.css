@@ -1,0 +1,91 @@
+form {
+    width: 100%;
+}
+
+form h2 {
+    font-size: 32px;
+    font-weight: bold;
+
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+
+    border-bottom: 3px solid black;
+}
+
+.form-container {
+    width: 45%;
+    min-width: 250px;
+    margin: 0 auto;
+}
+
+input, select {
+    display: block;
+    box-sizing: border-box;
+    font-size: 18px;
+
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+
+    border: 2px solid #b0b9cf;
+    border-radius: 10px;
+    background: #EBEFFB;
+    outline: none;
+
+    transition: 0.1s;
+}
+
+select {
+    width: auto;
+}
+
+input:focus, select:focus {
+    border: 2px solid #8b92a5;
+    box-shadow: 1px 1px 5px #8b92a5;
+    outline: none;
+}
+
+input[type=submit], input[type=button] {
+    width: auto;
+
+    border: none;
+    box-shadow: 1px 1px 5px #555;
+
+    margin: 10px 0;
+    padding: 15px 45px;
+
+    background: #20396e;
+    color: white;
+
+    transition: 0.1s;
+}
+
+input[type=radio] {
+    display: inline-block;
+    width: auto;
+    margin: 10px 0;
+}
+
+input[type=radio]:focus, input[type=checkbox] {
+    box-shadow: none;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+    background-color: #1a2e58;
+    cursor: pointer;
+}
+
+.radio-block {
+    margin: 10px 0;
+}
+
+.form-message {
+    margin-bottom: 10px;
+    color: #ab1919;
+}
+
+
+.check-user {
+    width: auto;
+    margin: 0 auto;
+}

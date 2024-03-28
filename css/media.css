@@ -1,0 +1,147 @@
+@media screen and (max-width: 1200px){
+    nav {
+        padding-right: 0;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        min-height: calc(100vh - 298px);
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 3px solid #b0b9cf;
+        min-width: auto;
+    }
+
+    .container {
+        min-height: calc(100vh - 110px);
+    }
+
+    .container:last-child {
+        min-height: calc(100vh - 298px);
+    }
+
+    .row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .col {
+        padding: 10px; !important
+    }
+
+    .gallery {
+        width: auto;
+        height: auto;
+    }
+
+    .gallery-frame-container {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+    }
+    .gallery-frame {
+        width: 70vw;
+        height: 70vw;
+        margin: 50px !important;
+
+    }
+
+    .gallery-switch-button {
+        display: none;
+    }
+
+    .form-container {
+        width: 100%
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 35px 0;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .logo {
+        height: 18px;
+    }
+
+    .mobile-nav > .nav-button {
+        font-size: 42px;
+        padding: 25px 20px;
+        min-width: 45px;
+    }
+
+    .mobile-nav-content {
+        flex-direction: column;
+    }
+
+    .mobile-nav-content .nav-button {
+        border-top: 2px solid #1a2e58;
+    }
+
+    .mobile-nav-content .nav-button:first-child {
+        border-top: none;
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    form {
+        font-size: 16px;
+    }
+
+    input, select {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    .logo {
+        height: 18px;
+    }
+
+    .mobile-nav > .nav-button {
+        font-size: 39px;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+
+    form {
+        font-size: 14px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
