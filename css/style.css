@@ -2,7 +2,7 @@ body {
     font-family: Tahoma, "Segoe UI", Arial, sans-serif;
 }
 
-nav, .mobile-nav-content, footer, .sidebar-button, .gallery-switch-button-active {
+nav, #mobile-nav-content, footer, .sidebar-button, .gallery-switch-button-active {
     background: #20396e;
 }
 
@@ -45,7 +45,7 @@ header > h1 {
 }
 
 
-.desktop-nav {
+#desktop-nav {
     display: flex;
 }
 
@@ -58,16 +58,16 @@ header > h1 {
     transition: 0.1s;
 }
 
-.mobile-nav {
+#mobile-nav {
     display: none;
 }
 
-.mobile-nav > .nav-button {
+#mobile-nav > .nav-button {
     font-size: 58px;
     padding: 25px 20px;
 }
 
-.mobile-nav-content {
+#mobile-nav-content {
     position: absolute;
     left: 0;
     right: 0;
@@ -75,28 +75,33 @@ header > h1 {
     display: none;
     justify-content: flex-end;
 
-    border-top: 3px solid #1a2e58;
-    border-bottom: 3px solid #1a2e58;
+    border-top: 2px solid #1a2e58;
+    border-bottom: 2px solid #1a2e58;
 }
 
-.mobile-nav-content .nav-button {
+#mobile-menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 29px 20px !important;
+    max-height: 110px;
+    min-width: auto;
+}
+
+#mobile-menu-bar img {
+    pointer-events: none;
+}
+
+#mobile-nav-content .nav-button {
     padding: 30px 20px;
 }
 
-.mobile-nav:hover #mobile-menu-bar{
+.mobile-nav-active #mobile-menu-bar {
     background-color: #1a2e58;
 }
 
-.mobile-nav:hover .mobile-nav-content{
+.mobile-nav-active #mobile-nav-content {
     display: flex;
-}
-
-#bars-button {
-    transition: 0.25s transform;
-}
-
-.mobile-nav:hover #bars-button{
-    transform: rotate(90deg);
 }
 
 /* ---------------------- Main Part ---------------------- */

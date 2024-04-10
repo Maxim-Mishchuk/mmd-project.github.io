@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/text.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 <nav>
@@ -16,14 +17,14 @@
         <h1>Header</h1>
     </header>
 
-    <div class="desktop-nav">
+    <div id="desktop-nav">
         <a class="nav-button" href="index.html">Головна</a>
         <a class="nav-button" href="schedule.html">Подивитися розклад</a>
     </div>
 
-    <div class="mobile-nav">
-        <a class="nav-button" id="mobile-menu-bar"><i class="fa-solid fa-bars" id="bars-button"></i></a>
-        <div class="mobile-nav-content">
+    <div id="mobile-nav">
+        <a class="nav-button" id="mobile-menu-bar"><img src="img/nav/menu.svg" alt="menu-btn"></a>
+        <div id="mobile-nav-content">
             <a class="nav-button" href="index.html">Головна</a>
             <a class="nav-button" href="schedule.html">Подивитися розклад</a>
         </div>
@@ -75,6 +76,6 @@
         "All content © mmd-project 2024. All rights reserved."
     </div>
 </footer>
-
+<script src="js/navbar.js"></script>
 </body>
 </html>
